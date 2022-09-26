@@ -1,0 +1,8 @@
+{
+  "label": "Setup",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "To earn rewards from MEV marketplace, you need to do some initial setup."
+  }
+}

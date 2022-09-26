@@ -1,0 +1,8 @@
+{
+  "label": "Example Implementation",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Going through all steps of an example searcher implementation."
+  }
+}
