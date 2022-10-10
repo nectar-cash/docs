@@ -15,8 +15,8 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs/whitepaper/overview">
-            MEV Marketplace Whitepaper
+          <Link className="button button--secondary button--lg" to="/whitepaper">
+            Nectar Whitepaper
           </Link>
         </div>
       </div>
@@ -27,7 +27,7 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title={`Hello from ${siteConfig.title}`} description="Description will go into a meta tag in <head />">
+    <Layout title={`${siteConfig.title}`} description="Returning MEV back to the user.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

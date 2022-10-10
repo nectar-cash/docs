@@ -41,15 +41,19 @@ MEV being a very generic concept means that it includes a wide array of differen
 Four main types of MEV tracked by MEV-Explore are:
 
 #### Arbitrage
+
 According to latest data, around 60% of MEV is arbitrage. This 
 
 #### Liquidations
+
 The second largest category of MEV, approximately 20%, are liquidations. These MEV transactions can be seen as “doing a job” that was designed by dapp developers.
 
 #### Sandwiching
+
 Sandwich attacks, approximately 20% of MEV, are the most notorious type duo to their toxicity and them directly taking money from the user that otherwise wouldn’t be taken.
 
 #### Replay
+
 One more type of MEV.
 
 There is also a long tail of other strategies that don’t fit neatly in these buckets. Some searchers specifically focus on the long tail strategies, as there can be less competition for them.
@@ -66,9 +70,11 @@ Toxic MEV hurts the user in some way, usually by extracing maximum possible fees
 On the other hand, non-toxic MEV does not hurt any specific user, and in many ways provides a service to the blockchain as a whole. Arbitrage transactions normalize asset prices across different trading protocols; liquidation MEV enforces dapp design by ensuring that enough collateral is backing loans. Non-Toxic MEV can be harder to attribute to a single user transaction, and sometimes arise from events off-chain, such as oracle updates.
 
 ### Attributable vs Non-Attributable MEV
+
 One more way to 
 
 ## Law of MEV Preservation
+
 As explained by Hasu from Flashbots, MEV has an almost thermodynamic property of preservation: if one method to add MEV transactions gets disabled, there are other ways how MEV would show up. Financial opportunities left on the network would eventually be taken.
 
 MEV transactions have a basic transmission channel of public mempools. This channel is highly inefficient both in terms of block use and value capture, but if more efficient channels are blocked, Searchers return to using them.
@@ -78,10 +84,13 @@ Even if MEV transactions were censored by some network participants, remaining n
 Due to this “law”, Ethereum researchers have 
 
 ## MEV Supply Chain
+
 who profits and how
 
 ## MEV Market Size
+
 MEV-Explore estimates that over 2021
 
 ## Chapter Summary
+
 In summary, Maximal Extractable Value is an unavoidable outcome of transparent, on-chain economy. It is also a very large portion of on-chain transactions, totalling $0.6B over 2022. MEV transactions are built by Searcher bots and include arbitrage, liquidations, and various “attacks” that surround user transaction to extract maximal value. Fundamentally, MEV cannot be avoided and can only be redirected, to be captured not just by Searchers.

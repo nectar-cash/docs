@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'MEV Marketplace',
+  title: 'Nectar',
   tagline: 'Returning MEV back to the user.',
-  url: 'https://docs.mev.org',
+  url: 'https://docs.nectar.cash',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'mevorg', // Usually your GitHub org/user name.
-  projectName: 'documentation', // Usually your repo name.
+  organizationName: 'nectar-cash', // Usually your GitHub org/user name.
+  projectName: 'docs', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -33,11 +33,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/nectar-cash/docs',
         },
         // blog: {
         //   showReadingTime: true,
@@ -57,11 +58,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'MEV Marketplace',
-        logo: {
-          alt: 'MEV Marketplace Placeholder',
-          src: 'img/logo.svg',
-        },
+        title: 'Nectar Documentation',
+        // logo: {
+        //   alt: 'MEV Marketplace Placeholder',
+        //   src: 'img/logo.svg',
+        // },
         items: [
           {
             type: 'doc',
@@ -84,12 +85,18 @@ const config = {
           // { to: '/blog', label: 'Updates', position: 'left' },
           {
             type: 'doc',
-            docId: 'whitepaper/overview',
+            docId: 'whitepaper/whitepaper',
             position: 'right',
             label: 'Whitepaper',
           },
           {
-            href: 'https://github.com/mevorg/documentation',
+            type: 'doc',
+            docId: 'research/overview',
+            position: 'right',
+            label: 'Research',
+          },
+          {
+            href: 'https://github.com/nectar-cash/docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -99,46 +106,34 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Twitter',
+                href: 'https://twitter.com/nectar_cash',
+              },
+              {
+                label: 'Telegram Announcements',
+                href: 'https://t.me/nectarcash',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/hu3wA6fUWT',
               },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+              
             ],
           },
           {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/mevorg/documentation',
+                href: 'https://github.com/nectar-cash',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} mev.org.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Nectar.`,
       },
       prism: {
         theme: lightCodeTheme,
